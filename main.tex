@@ -1,0 +1,180 @@
+%-------------------------
+% Resume in Latex
+% Template author : Sourabh Bajaj
+% Author: Rafael Bellotti
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{color}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\color{blue}
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://github.com/rafbel}{\color{blue}\Large Rafael Cortez Bellotti de Oliveira}} & \color{blue}Email : \href{mailto:bellotti.rafael@gmail.com}{\color{blue}bellotti.rafael@gmail.com}\\
+  \href{https://github.com/rafbel}{\color{blue}https://github.com/rafbel} & \color{blue}Mobile : +55 21 99948-0699 \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Objective}
+    \resumeSubHeadingListStart
+        Work for a company that values user experience, quality of service, and involves its members and community in engaging and collaborative processes.
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Federal University of Rio de Janeiro}{Rio de Janeiro, Brazil}
+      {Bachelor of Electronic and Computer Engineering;  CRA: 7.7}{Jan. 2012 - Jul. 2017}
+    \resumeSubheading
+      {Lehigh University}{Bethlehem, USA}
+      {Science without Borders Exchange Student;  GPA: 3.67}{Aug. 2015 - May. 2016}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Recent Experience}
+  \resumeSubHeadingListStart
+	\resumeSubheading
+      {Valid}{S\~ao Paulo, Brazil}
+      {Systems Development Analyst}{Dec. 2017 - Present}
+      \resumeItemListStart
+        \resumeItem{Engagement Manager}
+          {Digital marketing platform for sending e-mails and SMS. Equipped with its own editors and analytics platform, it provides all the right tools for engaging desired targets. Example clients: Guitar Center and Trader Joe's. Developed using Java, JavaScript, Angular, MongoDB, PostgreSQL, and Bootstrap. }
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {Zesto}{S\~ao Paulo, Brazil}
+      {Co-founder}{July 2018 - Present}
+      \resumeItemListStart
+        \resumeItem{Denouncement Portal}
+          {Currently playing the role of project manager and architect during the development of a portal that allows companies to receive anonymous denouncements.  }
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {TOTVS}{Rio de Janeiro, Brazil}
+      {Mobile Developer and Squad Leader}{Sep. 2017 - Dec. 2017}
+
+    		\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+     			 \textit{\small Mobile Development Intern} & \textit{\small Jul. 2016 - Aug. 2017}\\
+            \end{tabular*}\vspace{-5pt}
+      \begin{comment}
+            {Information Technology Development Intern}{Jul. 2016 - Aug. 2017}
+	  \end{comment}
+      \resumeItemListStart
+        \resumeItem{eSocial}
+          {Mobile solution focused on organizing and facilitating the effort to gather employee data for the Brazilian Federal Government's eSocial project. Developed using JavaScript and Appcelerator Titanium.}
+          \resumeItem{Por Dentro}
+          {Mobile app for Rede Globo's equity and service division. Developed using JavaScript and Appcelerator Titanium.}
+        \resumeItem{Codemig}
+          {App solution for Codemig to ensure ticket control at bus station. Developed using C\# and .NET.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Lehigh University}{Bethlehem, USA}
+      {Software Engineering Course Grader}{Jan. 2016 - May 2016}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Recent Personal Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Pet Feeder}
+      {Automatic domestic pet feeder that can be activated from a long distance. Developed using Raspberry Pi 2 and Python for the feeder system and Java for the client interface. }
+    \resumeSubItem{Maze Runner}
+      {Robot that receives instructions via Bluetooth on how to complete the maze after a photo from the maze is processed by a PC. Developed using Arduino, C++, and OpenCV.}
+  \resumeSubHeadingListEnd
+  
+ %--------Certifications------------ 
+\section{Certifications}
+\resumeSubHeadingListStart
+   \item{
+      \textbf{Software Product Management Specialization}{: University of Alberta, March 2018}
+      \hfill
+   }
+   \item{
+      \textbf{Design Thinking for Innovation}{: University of Virginia, December 2017}
+      \hfill
+   }
+   \item{
+      \textbf{Actions and Creative Endeavors on the Web}{: UFRJ, November 2014}
+      \hfill
+   } 
+   \item{
+      \textbf{Certificate in Advance English}{: Cambridge English Language Assessment, August 2009}
+      \hfill
+   }  
+ \resumeSubHeadingListEnd
+%--------Languages------------
+\section{Language Fluency}
+  \resumeSubHeadingListStart
+    Studied at an international school in Argentina for four and a half years (Asociaci\'on Escuelas Lincoln), where became fluent in both English and Spanish.
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
